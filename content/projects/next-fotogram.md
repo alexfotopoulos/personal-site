@@ -1,0 +1,47 @@
+---
+title: 'next-fotogram'
+date: '2022-08-03'
+image: copePic.jpg
+excerpt: Fotogram is an image-sharing social media platform loosely based on Meta's Instagram.
+isFeatured: true
+---
+
+## Fotogram
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Description
+
+Fotogram is an image-sharing social media platform loosely based on Meta's Instagram. Users are able to create an account and upload images with descriptions and comment on other users' images. The app is built using React and Next, Redux for app-wide state management, Mongo Atlas/Mongoose for data storage, jsonwebtoken for auth, and Cloudinary for image storage.
+
+The Mongo User model stores a user's username, password (hashed using Bcrypt), posts (array of Post model ObjectIds), and auto-generated id. Each Post model store's a posts cloudinary image url, description, upload date (for sorting), creator (ObjectId of respective user), and comments (array of Comment model ObjectIds), and auto-generated id. Each Comment model store's a comments text, upload date, creator (ObjectId of respective user), and auto-generated id.
+
+When a comment is deleted, the respective Comment document and comment from the "comments" array of the respective User document are deleted. When a post is deleted, the respective Post document, the comment documents related to the post, and the post from the "posts" array of the respective User document are deleted.
+
+## Technologies used
+
+### Front end
+- HTML
+- CSS
+- MaterialUI
+- React
+- Next
+- Redux
+
+### Back end
+- Next
+- Mongoose
+- Bcrypt
+- jsonwebtoken

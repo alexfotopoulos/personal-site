@@ -1,11 +1,13 @@
 import Hero from "../components/homepage/Hero";
+import FeaturedProjectsGrid from "../components/homepage/FeaturedProjectsGrid";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <section>
-        <h1>This is the second section to list some featured projects</h1>
+      <section className="homepageFeaturedProjects">
+        <h2>Featured Projects</h2>
+        <FeaturedProjectsGrid />
       </section>
     </main>
   );

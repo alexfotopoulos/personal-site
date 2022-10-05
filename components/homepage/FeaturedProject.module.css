@@ -1,0 +1,9 @@
+.featuredProject {
+    text-align: center;
+    background-color: rgb(118, 118, 118);
+    width: 300px;
+}
+
+.featuredProjectInfo {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
