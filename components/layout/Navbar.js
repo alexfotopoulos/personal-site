@@ -13,6 +13,7 @@ export default function Navbar() {
     <Box sx={{ flexGrow: 1, mb: 6 }}>
       <AppBar position="static" sx={{ backgroundColor: "#202124", boxShadow: "none" }}>
         <Toolbar>
+          <Link href="/">
           <IconButton
             size="large"
             edge="start"
@@ -22,6 +23,7 @@ export default function Navbar() {
           >
             <Image src={logo} alt="personal logo" height={50} width={50} />
           </IconButton>
+          </Link >
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           </Typography>
           <Link href="/projects"><Button color="inherit">Projects</Button></Link>
