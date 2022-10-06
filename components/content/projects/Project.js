@@ -1,16 +1,23 @@
 import styles from "./Project.module.css";
+import Head from "next/head";
+import { MDXRemote } from "next-mdx-remote";
 
-export default function Project() {
+export default function Project(props) {
+
+    const { title, image, date } = props.meta;
+
     return (
-        <div className={styles.project}>
-            <header className={styles.header}>
-                <h1 className={styles.headerElement}>Title</h1>
-                <p className={`${styles.headerElement} ${styles.target}`}>date</p>
-            </header>
-            <div>
-                <h3></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut adipisci neque, minima voluptate est laboriosam quasi ipsam accusantium harum hic aspernatur temporibus necessitatibus incidunt id ipsum veniam eveniet similique non.</p>
+        <>
+            <Head>
+                <title>{title}</title>
+            </Head>
+            <div className={styles.project}>
+                <header className={styles.header}>
+                    <h1 className={styles.headerElement}>{title}</h1>
+                    <p className={`${styles.headerElement} ${styles.target}`}>{date}</p>
+                </header>
+                <MDXRemote {...props.source} />
             </div>
-        </div>
+        </>
     );
 };
