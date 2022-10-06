@@ -1,0 +1,23 @@
+.project {
+    display: flex;
+    min-width: 800px;
+    background-color: black;
+    margin-bottom: 2rem;
+}
+
+.projectDetails {
+    padding-left: 2rem;
+}
+
+.projectDetailsTagsList {
+    padding-left: 0;
+    list-style: none;
+    list-style-position: outside;
+    display: flex;
+}
+
+.tag {
+    padding-right: 1rem;
+    font-size: small;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.project {
+    border: 1px solid white;
+    width: 800px;
+}
+
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.headerElement {
+    display: inline;
+}
