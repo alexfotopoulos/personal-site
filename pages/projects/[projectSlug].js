@@ -11,7 +11,9 @@ export default function ProjectPage(props) {
 };
 
 export async function getStaticPaths() {
-    const paths = getSlugs().map(projectSlug => ({ params: { projectSlug } }))
+    //create paths based on slugs of all projects
+    const paths = getSlugs().map(projectSlug => ({ params: { projectSlug } }));
+
     return {
         paths,
         fallback: false
@@ -19,7 +21,10 @@ export async function getStaticPaths() {
 };
 
 export async function getStaticProps(context) {
+    //retrieve content and meta for a specific project
     const { content, meta } = getProjectFromSlug(context.params.projectSlug);
+
+    //serialize content
     const mdxSource = await serialize(content);
 
     return {

@@ -15,6 +15,7 @@ export default function Home(props) {
 };
 
 export async function getStaticProps() {
+  //retrieve all projects (yet to filter by isFeatured)
   const projects = getAllProjects().map(project => project.meta);
 
   return {

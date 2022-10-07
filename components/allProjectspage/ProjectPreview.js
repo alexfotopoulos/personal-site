@@ -3,8 +3,10 @@ import styles from "./ProjectPreview.module.css";
 import Link from "next/link";
 
 export default function Project(props) {
-
+    //extract relevant info data props
     const { slug, excerpt, title, tags, image, date } = props.project;
+
+    //create path for image
     const imagePath = `/images/projectImages/${image}`;
 
     return (

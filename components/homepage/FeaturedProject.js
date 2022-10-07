@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function FeaturedProject(props) {
-
+    //extract relevant data from props
     const { slug, excerpt, title, image, date } = props.project;
+
+    //create path for image
     const imagePath = `/images/projectImages/${image}`;
 
     return (

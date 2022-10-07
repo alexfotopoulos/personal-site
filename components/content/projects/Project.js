@@ -3,7 +3,7 @@ import Head from "next/head";
 import { MDXRemote } from "next-mdx-remote";
 
 export default function Project(props) {
-
+    //extract relevant data from props
     const { title, image, date } = props.meta;
 
     return (

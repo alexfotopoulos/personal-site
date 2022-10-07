@@ -15,6 +15,7 @@ export default function AllProjects(props) {
 };
 
 export async function getStaticProps() {
+    //retrieve meta data from all projects
     const projects = getAllProjects().map(project => project.meta);
 
     return {
