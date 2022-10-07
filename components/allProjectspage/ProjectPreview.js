@@ -1,17 +1,17 @@
 import Image from "next/image";
 import styles from "./ProjectPreview.module.css";
-import copePic from "../../public/images/copePic.jpg";
 import Link from "next/link";
 
 export default function Project(props) {
 
     const { slug, excerpt, title, tags, image, date } = props.project;
+    const imagePath = `/images/projectImages/${image}`;
 
     return (
         <div className={styles.project}>
             <Link href={`/projects/${slug}`}>
                 <a>
-                    <Image src={copePic} height={300} width={200} />
+                    <Image src={imagePath} height={200} width={300} />
                 </a>
             </Link>
             <div className={styles.projectDetails}>
