@@ -16,8 +16,8 @@ export default function AllProjects(props) {
 
 export async function getStaticProps() {
     const projects = getAllProjects().map(project => project.meta);
-  
+
     return {
-      props: { projects }
+        props: { projects }
     };
-  };
+};

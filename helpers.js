@@ -9,7 +9,7 @@ export function getSlugs() {
     const paths = sync(`${PROJECTS_PATH}/*.mdx`);
 
     return paths.map(path => {
-        const parts = path.split("/");
+        const parts = path.split("/"); 
         const fileName = parts[parts.length - 1];
         const [slug, _ext] = fileName.split(".");
         return slug;
