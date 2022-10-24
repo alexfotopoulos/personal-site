@@ -37,10 +37,16 @@ export default function ContactForm() {
 
     //function to handle submission
     function handleSubmit() {
+        const data = {
+            name,
+            email,
+            message
+        };
+        fetch("/api/sendmail", {
+            method: "POST",
+            body: JSON.stringify(data)
+        });
         router.push("/");
-        console.log("NAME:", name);
-        console.log("EMAIL:", email);
-        console.log("MESSAGE:", message);
     };
 
     return (
