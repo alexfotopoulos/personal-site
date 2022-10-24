@@ -27,8 +27,8 @@ export default function Navbar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           </Typography>
           <Link href="/projects"><Button color="inherit">Projects</Button></Link>
-          <Link href="/projects"><Button color="inherit">About</Button></Link>
-          <Link href="/projects"><Button color="inherit">Contact</Button></Link>
+          <Link href="/about"><Button color="inherit">About</Button></Link>
+          <Link href="/contact"><Button color="inherit">Contact</Button></Link>
         </Toolbar>
       </AppBar>
     </Box>

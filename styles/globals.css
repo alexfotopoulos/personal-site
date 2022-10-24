@@ -6,7 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: white;
   background: #202124;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 a {
@@ -33,4 +33,11 @@ a {
 a {
   cursor: pointer;
   color: #ecb365;
+}
+
+.aboutPage {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
 }
