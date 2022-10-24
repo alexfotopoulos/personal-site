@@ -1,6 +1,3 @@
-import Image from "next/image";
-import me from "../public/images/copePic.jpg";
-
 export default function AboutPage() {
 
     return (
@@ -20,6 +17,7 @@ export default function AboutPage() {
                 
                 <p>
                 While I enjoyed success in my professional life, my work wasn’t fulfilling, and I knew I needed a change. In 2020, I decided to leave my career behind and forge a new professional life for myself, turning my interest in web development into a career. For the last year+, I've been learning all about coding, how the internet works, and the ins-and-outs of web development. My primary focus has been working with React and, more recently, NextJS. As a self-taught developer, I’ve taken numerous online courses, including:
+                </p>
                 <ul>
                     <li><a target="_blank" href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">HarvardX CS50's Introduction to Computer Science</a></li>
                     <li><a target="_blank" href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web Developer Bootcamp 2022</a></li>
@@ -29,7 +27,6 @@ export default function AboutPage() {
                     <li><a target="_blank" href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/">JavaScript Algorithms and Data Structures Masterclass</a></li>
                     <li><a target="_blank" href="https://www.udemy.com/course/git-and-github-bootcamp/">The Git & Github Bootcamp</a></li>
                 </ul>
-                </p>
             </div>
             <div>
                 

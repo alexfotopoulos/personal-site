@@ -11,7 +11,7 @@ export default function ContactFormSubmitButton(props) {
 
     return (
         <Stack spacing={2} direction="row">
-            <Button onClick={handleClick} variant="contained" sx={{ "&:hover": { backgroundColor: "#ecb365" }, backgroundColor: "#202124", mt: 2 }}>Submit</Button>
+            <Button onClick={handleClick} variant="contained" sx={{ "&:hover": { backgroundColor: "#ecb365" }, backgroundColor: "#202124", mt: 2 }} disabled={props.disabled}>Submit</Button>
         </Stack>
     );
 };
