@@ -4,3 +4,22 @@
     column-gap: 3rem;
     margin-bottom: 1rem;
 }
+
+@media (max-width: 1000px) {
+    .featuredProjects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        row-gap: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .featuredProjects {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        margin-bottom: 1rem;
+    }
+}

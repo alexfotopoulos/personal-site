@@ -19,7 +19,7 @@ export default async function handler(req, res) {
         from: process.env.OUTLOOK_USER,
         to: process.env.GMAIL_USER,
         subject: "Personal Site Contact Form Email",
-        text: `${data.name} sent the following message from ${data.email}: ${data.message}`
+        text: `${data.name} (${data.email}) sent the following message: ${data.message}`
     };
 
     transporter.sendMail(options, function (err, info) {
