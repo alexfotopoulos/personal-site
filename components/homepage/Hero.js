@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <div className={styles.hero}>
             <div >
-                <Image className={styles.image} src={me} height={400} width={300} />
+                <Image className={styles.image} src={me} height={300} width={225} />
             </div>
             <h1>Hi, I'm Alex</h1>
             <h3>I'm an aspiring web developer</h3>

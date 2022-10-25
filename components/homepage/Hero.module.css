@@ -26,7 +26,6 @@
   }
 }
 
-
 .image {
     width: 300px;
     height: 300px;
@@ -35,7 +34,7 @@
     margin: auto;
   }
   
-  .image img {
+.image img {
     object-fit: cover;
     object-position: top;
     width: 100%;
