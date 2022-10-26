@@ -1,6 +1,8 @@
 .project {
     display: flex;
-    min-width: 800px;
+    width: 850px;
+    height: 200px;
+    margin: auto;
     background-color: black;
     margin-bottom: 2rem;
 }
@@ -8,6 +10,10 @@
 .projectDetails {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.imageContainer {
+    width: 300px;
 }
 
 .projectDetailsTagsList {
@@ -21,4 +27,19 @@
     padding-right: 1rem;
     font-size: small;
     cursor: pointer;
+}
+
+@media(max-width: 650px) {
+    .project {
+        width: 350px;
+        margin: auto;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        display: block;
+        height: auto;
+    }
+    
+    .projectDetails {
+        padding: 0 1rem 0 1rem;
+    }
 }

@@ -12,8 +12,8 @@ export default function Project(props) {
     return (
         <div className={styles.project}>
             <Link href={`/projects/${slug}`}>
-                <a>
-                    <Image src={imagePath} height={200} width={300} />
+                <a className={styles.imageContainer}>
+                    <Image src={imagePath} height={200} width={300} layout="responsive"/>
                 </a>
             </Link>
             <div className={styles.projectDetails}>

@@ -3,8 +3,8 @@ import { getAllProjects } from "../../helpers";
 
 export default function AllProjects(props) {
     return (
-        <div className="projectpageProjectsList">
-            <h1>All Projects</h1>
+        <div>
+            <h1 className="allProjectsTitle">All Projects</h1>
             <div>
                 {props.projects.map(project => (
                     <ProjectPreview project={project} key={Math.random()} />

@@ -17,6 +17,11 @@ a {
   box-sizing: border-box;
 }
 
+a {
+  cursor: pointer;
+  color: #ecb365;
+}
+
 .homepageFeaturedProjects {
   display: flex;
   flex-direction: column;
@@ -24,15 +29,8 @@ a {
   margin-top: 2rem;
 }
 
-.projectpageProjectsList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-a {
-  cursor: pointer;
-  color: #ecb365;
+.allProjectsTitle {
+  text-align: center;
 }
 
 .aboutPage {
