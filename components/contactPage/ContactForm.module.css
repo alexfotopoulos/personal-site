@@ -4,5 +4,11 @@
     align-items: center;
     background-color: white;
     padding: 1rem;
-    min-width: 800px;
+    width: 850px;
   }
+
+@media (max-width: 600px) {
+  .contactForm {
+    width: 90%;
+  }
+}
