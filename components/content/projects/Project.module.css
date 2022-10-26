@@ -14,3 +14,10 @@
 .headerElement {
     display: inline;
 }
+
+@media (max-width: 500px) {
+    .project {
+        width: 90%;
+        font-size: 15px;
+    }
+}

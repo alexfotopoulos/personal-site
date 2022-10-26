@@ -4,7 +4,7 @@ import { serialize } from "next-mdx-remote/serialize";
 
 export default function ProjectPage(props) {
     return (
-        <div className="projectpageProjectsList">
+        <div className="project">
             <Project source={props.project.source} meta={props.project.meta} />
         </div>
     );
