@@ -8,3 +8,7 @@
 .featuredProjectInfo {
     padding: 0 0.5rem 0.5rem 0.5rem;
 }
+
+.featuredProjectInfo h3 {
+    color: #ecb365;
+}
