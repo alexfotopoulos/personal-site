@@ -25,6 +25,7 @@ export function getProjectFromSlug(slug) {
         content,
         meta: {
             slug,
+            isFeatured: data.isFeatured,
             excerpt: data.excerpt,
             title: data.title,
             tags: data.tags,

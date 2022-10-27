@@ -15,10 +15,12 @@ export default function Home(props) {
 };
 
 export async function getStaticProps() {
-  //retrieve all projects (yet to filter by isFeatured)
+  //retrieve all projects
   const projects = getAllProjects().map(project => project.meta);
+  //filter project by isFeatured
+  const featuredProjects = projects.filter(project => project.isFeatured === true);
 
   return {
-    props: { projects }
+    props: { projects: featuredProjects }
   };
 };
