@@ -7,8 +7,8 @@ export default function TagPage(props) {
     const router = useRouter();
 
     return (
-        <div className="projectpageProjectsList">
-            <h1>{`Projects related to: ${router.query.tagSlug}`}</h1>
+        <div>
+            <h1 className="allProjectsTitle">{`Projects related to: ${router.query.tagSlug}`}</h1>
             <div>
                 {props.projects.map(project => (
                     <ProjectPreview project={project} key={Math.random()} />

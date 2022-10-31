@@ -5,7 +5,7 @@ export default function AboutPage() {
             <div>
                 <h1>About me</h1>
                 <p>
-                    I'm an aspiring web developer looking to break into the industry and build beautiful and functional web applications.
+                    I'm an aspiring web developer looking to break into the industry and build beautiful and functional web applications. Check out my Github profile <a href="https://www.github.com/alexfotopoulos" target="_blank">here</a>.
                 </p>
                 <hr/>
             </div>
