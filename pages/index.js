@@ -21,6 +21,9 @@ export async function getStaticProps() {
   const featuredProjects = projects.filter(project => project.isFeatured === true);
 
   return {
-    props: { projects: featuredProjects }
+    props: {
+      projects: featuredProjects
+    },
+    revalidate: 60
   };
 };

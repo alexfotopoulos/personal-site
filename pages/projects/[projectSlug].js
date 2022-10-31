@@ -32,6 +32,7 @@ export async function getStaticProps(context) {
             project: {
                 source: mdxSource, meta
             }
-        }
+        },
+        revalidate: 60
     };
 };

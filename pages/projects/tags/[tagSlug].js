@@ -52,6 +52,9 @@ export async function getStaticProps(context) {
     const metaData = projects.map(project => project.meta);
 
     return {
-        props: { projects: metaData }
+        props: {
+            projects: metaData
+        },
+        revalidate: 60
     };
 };
