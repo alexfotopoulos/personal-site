@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 export default function ContactPage() {
-    const [flashOpen, setFlashOpen] = useState(false);
+    const [flashOpen, setFlashOpen] = useState(true);
     const [flashColor, setFlashColor] = useState("");
     const [flashMessage, setFlashMessage] = useState("");
 
@@ -19,14 +19,14 @@ export default function ContactPage() {
             } else {
                 router.push("/");
             }
-        }, 3000);
+        }, 2000);
     };
 
     return (
         <div className="contactPage">
             <h1>Contact Me</h1>
-            {flashOpen && <ContactFlashMessage open={flashOpen} color={flashColor} message={flashMessage} />}
             <ContactForm setFlashOpen={setFlashOpen} setFlashColor={setFlashColor} setFlashMessage={setFlashMessage} closeFlash={closeFlash} />
+            {flashOpen && <ContactFlashMessage open={flashOpen} color={flashColor} message={flashMessage} />}
         </div>
     );
 };
