@@ -1,14 +1,10 @@
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import ContactFormInput from "./ContactFormInput";
 import ContactFormSubmitButton from "./ContactFormSubmitButton";
 import styles from "./ContactForm.module.css";
 
 
-export default function ContactForm() {
-    //initialize router to redirect after submission
-    const router = useRouter();
-
+export default function ContactForm(props) {
     //initialize state for inputs
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -37,6 +33,9 @@ export default function ContactForm() {
 
     //function to handle submission
     async function handleSubmit() {
+        props.setFlashOpen(true);
+        props.setFlashColor("#808080");
+        props.setFlashMessage("Sending message...");
         const data = {
             name,
             email,
@@ -48,9 +47,13 @@ export default function ContactForm() {
         });
         const res = await response.json();
         if (res.message === "success") {
-            router.push("/");
+            props.setFlashColor("#ecb365");
+            props.setFlashMessage("Message sent!");
+            props.closeFlash(false);
         } else {
-            alert("Message not sent. Please try again");
+            props.setFlashColor("#e43636");
+            props.setFlashMessage("Error. Please try again.");
+            props.closeFlash(true);
         };
     };
 

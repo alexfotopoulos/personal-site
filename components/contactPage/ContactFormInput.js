@@ -21,7 +21,7 @@ export default function ContactFormInput(props) {
     return (
         <ThemeProvider theme={theme}>
             <Box
-                component="form" sx={{ "& > :not(style)": { m: 1, width: {xs: "325px", sm: "800px"}, backgroundColor: "white", }, "&:focus": { borderColor: "red" } }} noValidate autoComplete="off"
+                component="form" sx={{ "& > :not(style)": { m: 1, width: { xs: "325px", sm: "800px" }, backgroundColor: "white", }, "&:focus": { borderColor: "red" } }} noValidate autoComplete="off"
             >
                 {props.multiLine ? (<TextField id="filled-multiline-static" label={props.label} multiline rows={4} variant="filled" color="outline" required onChange={handleChange} />) : (<TextField id="filled-basic" label={props.label} variant="filled" color="outline" required onChange={handleChange} />)}
             </Box>
