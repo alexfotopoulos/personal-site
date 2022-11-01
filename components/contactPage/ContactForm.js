@@ -36,17 +36,22 @@ export default function ContactForm() {
     }, [name, email, message]);
 
     //function to handle submission
-    function handleSubmit() {
+    async function handleSubmit() {
         const data = {
             name,
             email,
             message
         };
-        fetch("/api/sendmail", {
+        const response = await fetch("/api/sendmail", {
             method: "POST",
             body: JSON.stringify(data)
         });
-        router.push("/");
+        const res = await response.json();
+        if (res.message === "success") {
+            router.push("/");
+        } else {
+            alert("Message not sent. Please try again");
+        };
     };
 
     return (
