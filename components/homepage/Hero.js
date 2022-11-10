@@ -9,7 +9,8 @@ export default function Hero() {
                 <Image className={styles.image} src={me} height={300} width={225} />
             </div>
             <h1>Hi, I'm Alex</h1>
-            <h3>I'm an aspiring web developer</h3>
+            <h4>I'm a web developer interested in building beautiful and functional web applications</h4>
+
             <p>Take a look around! I post about projects, learnings, and anything else related to web development. Feel free to reach out!</p>
         </div>
     );
