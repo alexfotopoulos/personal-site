@@ -3,17 +3,15 @@
     width: 850px;
     height: 200px;
     margin: auto;
-    background-color: black;
+    background-color: rgb(20,20,20);
     margin-bottom: 2rem;
+    border: 1px solid white;
+    cursor: pointer
 }
 
 .projectDetails {
     padding-left: 2rem;
     padding-right: 2rem;
-}
-
-.imageContainer {
-    width: 300px;
 }
 
 .projectDetailsTagsList {
@@ -38,8 +36,16 @@
         display: block;
         height: auto;
     }
-    
     .projectDetails {
         padding: 0 1rem 0 1rem;
     }
+    .img {
+        min-width: 348px;
+        /* object-fit: cover; */
+    }
+}
+
+.img {
+    width: 300px;
+    object-fit: fill;
 }
