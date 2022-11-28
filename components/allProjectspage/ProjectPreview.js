@@ -13,7 +13,7 @@ export default function Project(props) {
             <div className={styles.project}>
                 <img className={styles.img} src={imagePath} alt="" />
                 <div className={styles.projectDetails}>
-                    <p>{title}</p>
+                    <h3>{title}</h3>
                     <p>{date}</p>
                     <p>{excerpt}</p>
                     <ul className={styles.projectDetailsTagsList}>
