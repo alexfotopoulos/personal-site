@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import ContactFormInput from "./ContactFormInput";
-import ContactFormSubmitButton from "./ContactFormSubmitButton";
 import styles from "./ContactForm.module.scss";
 
 
@@ -32,7 +30,8 @@ export default function ContactForm(props) {
     }, [name, email, message]);
 
     //function to handle submission
-    async function handleSubmit() {
+    async function handleSubmit(evt) {
+        evt.preventDefault();
         props.setFlashOpen(true);
         props.setFlashColor("#808080");
         props.setFlashMessage("Sending message...");
@@ -59,10 +58,19 @@ export default function ContactForm(props) {
 
     return (
         <form className={styles.contactForm} onSubmit={handleSubmit}>
-            <ContactFormInput value={name} onChange={handleChangeName} label="name" multiLine={false} />
-            <ContactFormInput value={email} onChange={handleChangeEmail} label="email" multiLine={false} />
-            <ContactFormInput value={message} onChange={handleChangeMessage} label="message" multiLine={true} />
-            <ContactFormSubmitButton disabled={submitDisabled} onClick={handleSubmit} />
+            <div className={styles.inputGroup}>
+                <input className={styles.contactFormInput} placeholder="Full Name" value={name} onChange={evt => handleChangeName(evt.target.value)} id="name" required />
+                <label className={styles.contactFormLabel} htmlFor="name">Name</label>
+            </div>
+            <div className={styles.inputGroup}>
+                <input className={styles.contactFormInput} placeholder="Email" value={email} onChange={evt => handleChangeEmail(evt.target.value)} id="email" required />
+                <label className={styles.contactFormLabel} htmlFor="email">Email</label>
+            </div>
+            <div className={styles.inputGroup}>
+                <textarea rows="5" className={styles.contactFormInput} placeholder="Message" value={message} onChange={evt => handleChangeMessage(evt.target.value)} id="message" required />
+                <label className={styles.contactFormLabelTextArea} htmlFor="message">Message</label>
+            </div>
+            <button className={styles.contactFormButton} disabled={submitDisabled} onClick={handleSubmit}>SUBMIT</button>
         </form>
     );
 };

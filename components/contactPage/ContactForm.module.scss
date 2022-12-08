@@ -7,7 +7,77 @@
     background-color: $color-white;
     padding: 1rem;
     width: 85rem;
+    border-radius: 5px;
   }
+.inputGroup {
+  width: 90%;
+}
+
+.contactFormInput {
+  font-family: inherit;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border: none;
+  margin-bottom: $margin-bottom-small;
+  border-bottom: 3px solid transparent;
+  transition: all .3s;
+  box-shadow: 0 .5rem 2rem rgba($color-black, .1);
+
+  &:nth-of-type(1) {
+    margin-top: $margin-top-small;
+  }
+
+  &:focus {
+    outline:none;
+    border-bottom: 3px solid $primary-color;
+  }
+}
+
+.contactFormLabel {
+  color: $color-grey-dark-2;
+  font-size: 1.2rem;
+  display: block;
+  padding-left: 2rem;
+  margin-bottom: .2rem;
+  opacity: 1;
+  transition: all .3s;
+}
+
+//__input:placeholder-shown ~ &__label
+.contactFormInput:placeholder-shown ~ .contactFormLabel {
+  transform: translateY(-5rem);
+  opacity: 0;
+}
+
+.contactFormLabelTextArea {
+  color: $color-grey-dark-2;
+  font-size: 1.2rem;
+  display: block;
+  padding-left: 2rem;
+  margin-bottom: .2rem;
+  opacity: 1;
+  transition: all .3s;
+}
+
+//__input:placeholder-shown ~ &__label
+.contactFormInput:placeholder-shown ~ .contactFormLabelTextArea {
+  transform: translateY(-12rem);
+  opacity: 0;
+}
+
+.contactFormButton {
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 .5rem 2rem rgba($color-black, .1);
+
+  &:hover:not([disabled]) {
+    background-color: $primary-color;
+  }
+}
+
 
 @media (max-width: 600px) {
   .contactForm {
