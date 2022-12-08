@@ -23,8 +23,8 @@ export default function ContactPage() {
     };
 
     return (
-        <div className="contactPage">
-            <h1>Contact Me</h1>
+        <div className="page-container">
+            <h1 className="heading-primary u-margin-bottom-small">Contact Me</h1>
             <ContactForm setFlashOpen={setFlashOpen} setFlashColor={setFlashColor} setFlashMessage={setFlashMessage} closeFlash={closeFlash} />
             {flashOpen && <ContactFlashMessage open={flashOpen} color={flashColor} message={flashMessage} />}
         </div>

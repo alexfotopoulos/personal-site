@@ -1,4 +1,4 @@
-import styles from "./Hero.module.css";
+import styles from "./Hero.module.scss";
 
 export default function Hero() {
     return (
@@ -6,10 +6,10 @@ export default function Hero() {
             <div >
             <img src={"images/NewHeadshot.jpg"} alt="" className={styles.img} />
             </div>
-            <h1>Hi, I'm Alex</h1>
-            <h4>I'm a web developer interested in building beautiful and functional web applications</h4>
+            <h1 className={"heading-primary u-margin-bottom-big u-margin-top-medium"}>Hi, I'm Alex</h1>
+            <h2 className={"heading-tertiary"}>I'm a web developer interested in building beautiful and functional web applications</h2>
 
-            <p>Take a look around! I post about previous and current projects. Feel free to reach out!</p>
+            {/* <p className="heading-tertiary">Take a look around! I post about previous and current projects. Feel free to reach out!</p> */}
         </div>
     );
 };

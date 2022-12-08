@@ -1,13 +1,13 @@
 export default function AboutPage() {
 
     return (
-        <div className="aboutPage">
+        <main className="page-container default-font-size">
             <div>
-                <h1>About me</h1>
+                <h1 className="heading-primary u-margin-bottom-small">About me</h1>
                 <hr />
             </div>
             <div>
-                <h2>My Coding Journey</h2>
+                <h2 className="heading-secondary u-margin-bottom-small u-margin-top-small">My Coding Journey</h2>
                 <p>
                     I'd always been interested in understanding how computers and technology worked. When I first saw code on my computer screen, I was so intrigued by it. In 2019, I took a beginners Python course which taught me basic programming topics. I chose Python as the use of white space made it more readable for a newbie like me.
                 </p>
@@ -34,11 +34,11 @@ export default function AboutPage() {
                 Check out my Github profile <a href="https://www.github.com/alexfotopoulos" target="_blank">here</a>.
             </p>
             <div>
-                <h2>Background</h2>
+                <h2 className="heading-secondary u-margin-bottom-small u-margin-top-small">Background</h2>
                 <p>
                     My formal education consists of a bachelor’s degree in Finance from Florida State University, and my professional experience has primarily been in the compliance space with a focus on Anti-Money Laundering. I've worked for large, multinational firms like Citibank, N.A. in Tampa, FL and fintech "neo" banks like N26 GmbH in New York, NY.
                 </p>
             </div>
-        </div >
+        </main >
     );
 };

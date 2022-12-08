@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ContactFormInput from "./ContactFormInput";
 import ContactFormSubmitButton from "./ContactFormSubmitButton";
-import styles from "./ContactForm.module.css";
+import styles from "./ContactForm.module.scss";
 
 
 export default function ContactForm(props) {

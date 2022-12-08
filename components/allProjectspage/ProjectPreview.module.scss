@@ -1,17 +1,19 @@
+@import "../../styles/sass/abstracts/variables.module.scss";
+
 .project {
     display: flex;
-    width: 850px;
-    height: 200px;
+    width: 85rem;
+    height: 20rem;
     margin: auto;
-    background-color: rgb(20,20,20);
-    margin-bottom: 2rem;
-    border: 1px solid white;
-    cursor: pointer
+    background-color: $color-black-matte;
+    margin-bottom: $margin-bottom-medium;
+    border: 1px solid $color-white;
+    cursor: pointer;
+    font-size: $default-font-size;
 }
 
 .projectDetails {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0 2rem;
 }
 
 .projectDetailsTagsList {
@@ -19,6 +21,7 @@
     list-style: none;
     list-style-position: outside;
     display: flex;
+    margin-bottom: $margin-bottom-small;
 }
 
 .tag {
@@ -29,9 +32,9 @@
 
 @media(max-width: 650px) {
     .project {
-        width: 350px;
+        width: 350rem;
         margin: auto;
-        margin-bottom: 1rem;
+        margin-bottom: $margin-bottom-medium;
         padding-bottom: 0.5rem;
         display: block;
         height: auto;
@@ -40,12 +43,12 @@
         padding: 0 1rem 0 1rem;
     }
     .img {
-        min-width: 348px;
+        min-width: 3.48rem;
         /* object-fit: cover; */
     }
 }
 
 .img {
-    width: 300px;
+    width: 30rem;
     object-fit: fill;
 }

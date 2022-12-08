@@ -1,4 +1,4 @@
-import styles from "./Project.module.css";
+import styles from "./Project.module.scss";
 import Head from "next/head";
 import { MDXRemote } from "next-mdx-remote";
 
@@ -7,7 +7,7 @@ export default function Project(props) {
     const { title, image, date } = props.meta;
 
     return (
-        <>
+        <div className="page-container">
             <Head>
                 <title>{title}</title>
             </Head>
@@ -18,6 +18,6 @@ export default function Project(props) {
                 </header>
                 <MDXRemote {...props.source} />
             </div>
-        </>
+        </div>
     );
 };

@@ -1,4 +1,4 @@
-import styles from "./ProjectPreview.module.css";
+import styles from "./ProjectPreview.module.scss";
 import Link from "next/link";
 
 export default function Project(props) {
@@ -13,9 +13,9 @@ export default function Project(props) {
             <div className={styles.project}>
                 <img className={styles.img} src={imagePath} alt="" />
                 <div className={styles.projectDetails}>
-                    <h3>{title}</h3>
-                    <p>{date}</p>
-                    <p>{excerpt}</p>
+                    <h3 className="heading-tertiary u-margin-bottom-small u-margin-top-small">{title}</h3>
+                    <p className="u-margin-bottom-small">{date}</p>
+                    <p className="u-margin-bottom-small">{excerpt}</p>
                     <ul className={styles.projectDetailsTagsList}>
                         {tags.map(tag => (
                             <Link key={Math.random()} href={`/projects/tags/${tag}`}>

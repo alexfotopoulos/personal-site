@@ -1,0 +1,29 @@
+//colors
+$primary-color: #ecb365;
+$color-background-dark: #202124;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+$color-black-matte: rgb(20,20,20);
+
+//font
+$default-font-size: 1.5rem;
+
+//margin
+$margin-bottom-small: 1.5rem;
+$margin-bottom-medium: 3rem;
+$margin-bottom-big: 5rem;
+$margin-top-small: 1.5rem;
+$margin-top-medium: 3rem;
+$margin-top-big: 5rem;
+
+:export {
+    colorBackgroundDark: $color-background-dark;
+}

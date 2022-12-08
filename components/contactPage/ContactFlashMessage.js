@@ -1,4 +1,4 @@
-import styles from "./ContactFlashMessage.module.css";
+import styles from "./ContactFlashMessage.module.scss";
 
 export default function ContactModal(props) {
     return (

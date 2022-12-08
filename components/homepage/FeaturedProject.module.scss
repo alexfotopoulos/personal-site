@@ -1,7 +1,9 @@
+@import "../../styles/sass/abstracts/variables.module.scss";
+
 .featuredProject {
     text-align: center;
-    background-color: rgb(20,20,20);
-    width: 300px;
+    background-color: $color-black-matte;
+    width: 30rem;
     cursor: pointer;
 }
 

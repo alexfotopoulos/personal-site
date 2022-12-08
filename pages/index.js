@@ -7,7 +7,7 @@ export default function Home(props) {
     <main>
       <Hero />
       <section className="homepageFeaturedProjects">
-        <h2>Featured Projects</h2>
+        <h2 className={"heading-secondary u-margin-bottom-small"}>Featured Projects</h2>
         <FeaturedProjectsGrid projects={props.projects} />
       </section>
     </main>

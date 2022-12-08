@@ -1,4 +1,4 @@
-import styles from "./FeaturedProjectsGrid.module.css";
+import styles from "./FeaturedProjectsGrid.module.scss";
 import FeaturedProject from "./FeaturedProject";
 
 export default function FeaturedProjects(props) {
