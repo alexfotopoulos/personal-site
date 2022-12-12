@@ -11,7 +11,7 @@ export default function Project(props) {
     return (
         <Link href={`/projects/${slug}`}>
             <div className={styles.project}>
-                <img className={styles.img} src={imagePath} alt="" />
+                <img className={styles.img} src={imagePath} alt={`image of ${title}`} />
                 <div className={styles.projectDetails}>
                     <h3 className="heading-tertiary u-margin-bottom-small u-margin-top-small">{title}</h3>
                     <p className="u-margin-bottom-small">{date}</p>
