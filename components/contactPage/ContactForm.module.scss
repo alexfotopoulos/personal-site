@@ -1,12 +1,13 @@
 @import "../../styles/sass/abstracts/variables.module.scss";
+@import "../../styles/sass/abstracts/mixins";
 
 .contactForm {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $color-white;
+    background-color: $color-grey-light-2;
     padding: 1rem;
-    width: 85rem;
+    max-width: 85rem;
     border-radius: 5px;
   }
 .inputGroup {
@@ -19,6 +20,7 @@
   width: 100%;
   padding: 1.5rem 2rem;
   border: none;
+  border-radius: 5px;
   margin-bottom: $margin-bottom-small;
   border-bottom: 3px solid transparent;
   transition: all .3s;
@@ -75,12 +77,5 @@
 
   &:hover:not([disabled]) {
     background-color: $color-primary;
-  }
-}
-
-
-@media (max-width: 600px) {
-  .contactForm {
-    width: 90%;
   }
 }

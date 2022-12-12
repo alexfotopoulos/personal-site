@@ -1,3 +1,5 @@
+@import "../../styles/sass/abstracts/mixins";
+
 .featuredProjects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -5,7 +7,7 @@
     margin-bottom: 1rem;
 }
 
-@media (max-width: 1000px) {
+@include respond(tab-port) {
     .featuredProjects {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -15,7 +17,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@include respond(phone) {
     .featuredProjects {
         display: grid;
         grid-template-columns: 1fr;

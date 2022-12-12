@@ -1,12 +1,22 @@
+@import "../abstracts/mixins";
+
 //headings
 .heading-primary {
     font-size: 5rem;
     font-weight: 300;
+
+    @include respond(phone) {
+        font-size: 4rem;
+    }
 }
 
 .heading-secondary {
     font-size: 3rem;
     font-weight: 300;
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 }
 
 .heading-tertiary {

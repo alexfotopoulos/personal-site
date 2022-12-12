@@ -1,4 +1,5 @@
 @import "../../styles/sass/abstracts/variables.module.scss";
+@import "../../styles/sass/abstracts/mixins";
 
 .project {
     display: flex;
@@ -7,7 +8,7 @@
     margin: auto;
     background-color: $color-black-matte;
     margin-bottom: $margin-bottom-medium;
-    border: 1px solid $color-white;
+    border: 1px solid $color-grey-light-2;
     cursor: pointer;
     font-size: $default-font-size;
 }
@@ -29,9 +30,9 @@
     cursor: pointer;
 }
 
-@media(max-width: 650px) {
+@include respond(phone) {
     .project {
-        width: 350rem;
+        // width: 350rem;
         margin: auto;
         margin-bottom: $margin-bottom-medium;
         padding-bottom: 0.5rem;
@@ -46,6 +47,24 @@
         /* object-fit: cover; */
     }
 }
+
+// @media(max-width: 650px) {
+//     .project {
+//         // width: 350rem;
+//         margin: auto;
+//         margin-bottom: $margin-bottom-medium;
+//         padding-bottom: 0.5rem;
+//         display: block;
+//         height: auto;
+//     }
+//     .projectDetails {
+//         padding: 0 1rem 0 1rem;
+//     }
+//     .img {
+//         min-width: 3.48rem;
+//         /* object-fit: cover; */
+//     }
+// }
 
 .img {
     width: 30rem;
