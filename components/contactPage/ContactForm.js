@@ -60,7 +60,7 @@ export default function ContactForm(props) {
         <form className={styles.contactForm} onSubmit={handleSubmit}>
             <div className={styles.inputGroup}>
                 <input className={styles.contactFormInput} placeholder="Full Name" value={name} onChange={evt => handleChangeName(evt.target.value)} id="name" required />
-                <label className={styles.contactFormLabel} htmlFor="name">Name</label>
+                <label className={styles.contactFormLabel} htmlFor="name">Full Name</label>
             </div>
             <div className={styles.inputGroup}>
                 <input className={styles.contactFormInput} placeholder="Email" value={email} onChange={evt => handleChangeEmail(evt.target.value)} id="email" required />

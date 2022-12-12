@@ -30,7 +30,7 @@
 
   &:focus {
     outline:none;
-    border-bottom: 3px solid $primary-color;
+    border-bottom: 3px solid $color-primary;
   }
 }
 
@@ -74,7 +74,7 @@
   box-shadow: 0 .5rem 2rem rgba($color-black, .1);
 
   &:hover:not([disabled]) {
-    background-color: $primary-color;
+    background-color: $color-primary;
   }
 }
 
