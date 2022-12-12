@@ -1,9 +1,16 @@
 @import "../../styles/sass/abstracts/mixins";
+@import "../../styles/sass/abstracts/animations";
 
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;text-align: center;
+    transition: all .2s;
+}
+
+#intro {
+  transition: all .2s;
+  animation: moveInBottom .4s ease-out .1s;
 }
 
 .img {
