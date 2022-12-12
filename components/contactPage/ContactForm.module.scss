@@ -75,6 +75,10 @@
   border: none;
   box-shadow: 0 .5rem 2rem rgba($color-black, .1);
 
+  &:not([disabled]) {
+    color: $color-black-matte;
+  }
+
   &:hover:not([disabled]) {
     background-color: $color-primary;
   }
