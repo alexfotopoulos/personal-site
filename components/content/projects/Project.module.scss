@@ -2,11 +2,21 @@
 
 .project {
     border: 1px solid $color-white;
-    padding: 1rem;
+    padding: 1.6rem;
     width: 80rem;
     background: $color-black-matte;
     margin-bottom: 2rem;
     font-size: $default-font-size;
+
+    & > * {
+        margin: 1.6rem;
+        list-style-position: inside;
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+        padding: .5rem;
+    }
 }
 
 .header {
@@ -17,11 +27,4 @@
 
 .headerElement {
     display: inline;
-}
-
-@media (max-width: 500px) {
-    .project {
-        width: 90%;
-        font-size: 1.5rem;
-    }
 }
