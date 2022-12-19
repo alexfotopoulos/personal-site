@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div className={styles.navbar}>
       <Link href="/" className={styles.logo}>
-        <Image src={logo} alt="personal logo" height={50} width={50} />
+        <a><Image src={logo} alt="personal logo" height={50} width={50} /></a>
       </Link >
       <div className={styles.linksGroup}>
         <Link href="/projects"><a className={styles.link}>Projects</a></Link>

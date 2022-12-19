@@ -1,4 +1,4 @@
-@import "../../styles/sass/abstracts/variables.module";
+@import "../../styles/sass/abstracts/variables";
 @import "../../styles/sass/abstracts/mixins";
 
 .navbar {
@@ -11,7 +11,10 @@
 }
 
 .logo {
-    
+
+    // &:hover {
+    //     cursor: pointer;
+    // }
 }
 
 .link {
