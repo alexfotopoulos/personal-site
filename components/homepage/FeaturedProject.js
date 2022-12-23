@@ -12,7 +12,7 @@ export default function FeaturedProject(props) {
     return (
         <Link href={`/projects/${slug}`}>
             <div className={styles.featuredProject}>
-                <Image src={imagePath} height={100} width={200} layout="responsive" />
+                <Image src={imagePath} height={100} width={200} layout="responsive" alt="featured project"/>
                 <div className={styles.featuredProjectInfo}>
                     <h3 className="heading-tertiary u-margin-bottom-small u-margin-top-small">{title}</h3>
                     <p className="default-font-size u-margin-bottom-small">{date}</p>
