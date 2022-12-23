@@ -9,11 +9,11 @@ export default function AboutPage() {
             <div>
                 <h2 className="heading-secondary u-margin-bottom-small u-margin-top-small">My Coding Journey</h2>
                 <p>
-                    I'd always been interested in understanding how computers and technology worked. When I first saw code on my computer screen, I was so intrigued by it. In 2019, I took a beginners Python course which taught me basic programming topics. I chose Python as the use of white space made it more readable for a newbie like me.
+                    I'd always been interested in understanding how computers and technology worked. When I first saw code on a computer screen, I was captivated by it. It looked so cryptic, but I knew every line of code was logical and intentional. In 2019, I signed up for a beginners Python course which taught me basic programming topics. I chose Python as the use of white space made it more readable as a beginner taking their first steps into the coding universe.
                 </p>
                 <br />
                 <p>
-                    I progressed through the course, and at a certain point, I knew enough to write a small script for a game of hang man played at the command line. After a couple of days, I had it working. Though it was a small project consisting of a single script, I felt such satisfaction that I was able to create something on my own. I knew then that development was something I could pursue professionally.
+                    I progressed through the course, and at a certain point, I knew enough to write a small script for a game of Hangman played at the command line. After a couple of days, I had it working. Though it was a small project consisting of a single file, I felt such satisfaction that I was able to create something on my own. I knew then that development was something I could pursue professionally one day.
                 </p>
                 <br />
                 <p>
@@ -21,7 +21,7 @@ export default function AboutPage() {
                 </p>
                 <br />
                 <p>
-                    As a self-taught developer, I’ve taken numerous online courses, including:
+                    As a self-taught web developer, I’ve taken approximately 250 hours of expert-led online courses, including:
                 </p>
                 <br />
                 <ul className="about-page__ul">
@@ -42,7 +42,7 @@ export default function AboutPage() {
             <div>
                 <h2 className="heading-secondary u-margin-bottom-small u-margin-top-small">Background</h2>
                 <p>
-                    My formal education consists of a bachelor’s degree in Finance from Florida State University, and my professional experience has primarily been in the compliance space with a focus on Anti-Money Laundering. I've worked for large, multinational firms like Citibank, N.A. in Tampa, FL and fintech "neo" banks like N26 GmbH in New York, NY.
+                    My formal education consists of a bachelor’s degree in Finance from Florida State University, and my professional experience has primarily been in the compliance space with a focus on Anti-Money Laundering. I've worked for large, multinational firms like Citibank, N.A. in Tampa, FL and fintech "neo" banks like N26 Inc. in New York, NY.
                 </p>
             </div>
         </main>
