@@ -54,3 +54,23 @@
         object-fit: cover;
     }
 }
+
+@include respond(small-phone) {
+    .project {
+        width: 35.1rem;
+        margin: auto;
+        margin-bottom: $margin-bottom-medium;
+        padding-bottom: 0.5rem;
+        display: block;
+        height: auto;
+    }
+
+    .projectDetails {
+        padding: 0 1rem;
+    }
+
+    .img {
+        width: 33.3rem;
+        object-fit: cover;
+    }
+}
