@@ -30,12 +30,16 @@
     cursor: pointer;
 }
 
+.imgContainer {
+    width: 40%;
+    overflow: hidden;
+}
+
 .img {
-    width: 35rem;
-    object-fit: cover;
+    width: 100%;
 }
 
-@include respond(phone) {
+@include respond(tab-port) {
     .project {
         width: 35.1rem;
         margin: auto;
@@ -49,28 +53,7 @@
         padding: 0 1rem;
     }
 
-    .img {
-        width: 34.8rem;
-        object-fit: cover;
-    }
-}
-
-@include respond(small-phone) {
-    .project {
-        width: 35.1rem;
-        margin: auto;
-        margin-bottom: $margin-bottom-medium;
-        padding-bottom: 0.5rem;
-        display: block;
-        height: auto;
-    }
-
-    .projectDetails {
-        padding: 0 1rem;
-    }
-
-    .img {
-        width: 33.3rem;
-        object-fit: cover;
+    .imgContainer {
+        width: 100%;
     }
 }

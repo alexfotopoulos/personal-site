@@ -9,11 +9,11 @@ export default function AboutPage() {
             <div>
                 <h2 className="heading-secondary u-margin-bottom-small u-margin-top-small">My Coding Journey</h2>
                 <p>
-                    I'd always been interested in understanding how computers and technology worked. When I first saw code on a computer screen, I was captivated by it. It looked so cryptic, but I knew every line of code was logical and intentional. In 2019, I signed up for a beginners Python course which taught me basic programming topics. I chose Python as the use of white space made it more readable as a beginner taking their first steps into the coding universe.
+                    I've always been interested in understanding how computers and technology worked. When I first saw code on a computer screen, I was captivated by it. It looked so cryptic, but I knew every line of code was logical and intentional. In 2019, I signed up for a beginners Python course which taught me basic programming topics. Python's use of white space made it more readable for a beginner taking their first steps into the coding universe.
                 </p>
                 <br />
                 <p>
-                    I progressed through the course, and at a certain point, I knew enough to write a small script for a game of Hangman played at the command line. After a couple of days, I had it working. Though it was a small project consisting of a single file, I felt such satisfaction that I was able to create something on my own. I knew then that development was something I could pursue professionally one day.
+                    I progressed through the course, and at a certain point, knew enough to write a small script for a game of Hangman played at the command line. After a couple of days, it was working. Though it was a small project consisting of a single file, being able to create something on my own brought such satisfaction. I knew then that development was something I could pursue professionally one day.
                 </p>
                 <br />
                 <p>
