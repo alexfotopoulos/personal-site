@@ -1,9 +1,12 @@
+import Navbar from "../components/layout/Navbar";
 import Hero from "../components/homepage/Hero";
 import FeaturedProjectsGrid from "../components/homepage/FeaturedProjectsGrid";
 import { getAllProjects } from "../helpers";
 
 export default function Home(props) {
   return (
+    <>
+    <Navbar />
     <main>
       <Hero />
       <section className="homepageFeaturedProjects">
@@ -11,6 +14,7 @@ export default function Home(props) {
         <FeaturedProjectsGrid projects={props.projects} />
       </section>
     </main>
+    </>
   );
 };
 

@@ -1,26 +1,55 @@
 @import "../../styles/sass/abstracts/variables";
 @import "../../styles/sass/abstracts/mixins";
 
-.navbar {
+.Navbar {
     margin: 2rem auto $margin-bottom-big;
     max-width: 115rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 2rem;
 }
 
-.logo {
+.navIcon {
+    position: relative;
 
-    // &:hover {
-    //     cursor: pointer;
-    // }
+    &,
+    &::before,
+    &::after  {
+        width: 3rem;
+        height: .2rem;
+        background-color: $color-grey-light-2;
+        display: inline-block;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+
+    &::before {
+        top: -.8rem;
+    }
+
+    &::after {
+        top: .8rem;
+    }
 }
 
 .link {
     font-size: 2rem;
     font-weight: 300;
     padding: 0 1rem;
+}
+
+.drawerLink {
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    
+    &:first-of-type {
+        margin-top: 1rem;
+    }
 }
 
 .link:hover {

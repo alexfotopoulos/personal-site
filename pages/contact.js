@@ -1,3 +1,4 @@
+import Navbar from "../components/layout/Navbar";
 import ContactForm from "../components/contactPage/ContactForm";
 import ContactFlashMessage from "../components/contactPage/ContactFlashMessage";
 import { useState } from "react";
@@ -23,10 +24,13 @@ export default function ContactPage() {
     };
 
     return (
-        <div className="page-container">
-            <h1 className="heading-primary u-margin-bottom-small">Contact Me</h1>
-            <ContactForm setFlashOpen={setFlashOpen} setFlashColor={setFlashColor} setFlashMessage={setFlashMessage} closeFlash={closeFlash} />
-            {flashOpen && <ContactFlashMessage open={flashOpen} color={flashColor} message={flashMessage} />}
-        </div>
+        <>
+            <Navbar />
+            <div className="page-container">
+                <h1 className="heading-primary u-margin-bottom-small">Contact Me</h1>
+                <ContactForm setFlashOpen={setFlashOpen} setFlashColor={setFlashColor} setFlashMessage={setFlashMessage} closeFlash={closeFlash} />
+                {flashOpen && <ContactFlashMessage open={flashOpen} color={flashColor} message={flashMessage} />}
+            </div>
+        </>
     );
 };

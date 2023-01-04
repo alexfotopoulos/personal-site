@@ -1,12 +1,16 @@
+import Navbar from "../../components/layout/Navbar";
 import Project from "../../components/content/projects/Project";
 import { getProjectFromSlug, getSlugs } from "../../helpers";
 import { serialize } from "next-mdx-remote/serialize";
 
 export default function ProjectPage(props) {
     return (
-        <div className="project">
-            <Project source={props.project.source} meta={props.project.meta} />
-        </div>
+        <>
+            <Navbar />
+            <div className="project">
+                <Project source={props.project.source} meta={props.project.meta} />
+            </div>
+        </>
     );
 };
 

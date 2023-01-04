@@ -1,3 +1,4 @@
+import Navbar from "../../../components/layout/Navbar";
 import { useRouter } from "next/router";
 import { getAllProjects } from "../../../helpers";
 import ProjectPreview from "../../../components/allProjectspage/ProjectPreview";
@@ -7,14 +8,17 @@ export default function TagPage(props) {
     const router = useRouter();
 
     return (
-        <div className="page-container">
-            <h1 className="heading-primary u-margin-bottom-small">{`Projects related to: ${router.query.tagSlug}`}</h1>
-            <div>
-                {props.projects.map(project => (
-                    <ProjectPreview project={project} key={Math.random()} />
-                ))}
+        <>
+            <Navbar />
+            <div className="page-container">
+                <h1 className="heading-primary u-margin-bottom-small">{`Projects related to: ${router.query.tagSlug}`}</h1>
+                <div>
+                    {props.projects.map(project => (
+                        <ProjectPreview project={project} key={Math.random()} />
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

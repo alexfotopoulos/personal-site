@@ -25,7 +25,10 @@ body {
   margin: 0 auto;
 }
 
-a {
+a,
+a:link,
+a:visited,
+a:hover {
   text-decoration: none;
   cursor: pointer;
   color: $color-primary;

@@ -1,16 +1,20 @@
+import Navbar from "../../components/layout/Navbar";
 import ProjectPreview from "../../components/allProjectspage/ProjectPreview";
 import { getAllProjects } from "../../helpers";
 
 export default function AllProjects(props) {
     return (
-        <div className="page-container">
-            <h1 className="heading-primary u-margin-bottom-small">All Projects</h1>
-            <div>
-                {props.projects.map(project => (
-                    <ProjectPreview project={project} key={Math.random()} />
-                ))}
+        <>
+            <Navbar />
+            <div className="page-container">
+                <h1 className="heading-primary u-margin-bottom-small">All Projects</h1>
+                <div>
+                    {props.projects.map(project => (
+                        <ProjectPreview project={project} key={Math.random()} />
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
