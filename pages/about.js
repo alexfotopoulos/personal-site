@@ -32,16 +32,16 @@ export default function AboutPage() {
                         <li><a target="_blank" rel="noreferrer" href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">HarvardX CS50's Introduction to Computer Science</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web Developer Bootcamp 2022</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">React – The Complete Guide</a></li>
-                        <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/">React, NodeJS, Express & MongoDB – The MERN Fullstack Guide</a></li>
+                        <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/">React, NodeJS, Express & MongoDB – The MERN Full Stack Guide</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/nextjs-react-the-complete-guide/">Next.js & React – The Complete Guide</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/advanced-css-and-sass/">Advanced CSS and Sass: Flexbox, Grid, Animations and More</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/">JavaScript Algorithms and Data Structures Masterclass</a></li>
-                        <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/git-and-github-bootcamp/">The Git & Github Bootcamp</a></li>
+                        <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/git-and-github-bootcamp/">The Git & GitHub Bootcamp</a></li>
                     </ul>
                 </div>
                 <br />
                 <p>
-                    Check out my Github profile <a rel="noreferrer" href="https://www.github.com/alexfotopoulos" target="_blank">here</a>.
+                    Check out my GitHub profile <a rel="noreferrer" href="https://www.github.com/alexfotopoulos" target="_blank">here</a>.
                 </p>
                 <div>
                     <h2 className="heading-secondary u-margin-bottom-small u-margin-top-small">Background</h2>
