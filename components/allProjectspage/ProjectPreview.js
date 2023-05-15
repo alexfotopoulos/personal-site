@@ -1,5 +1,6 @@
 import styles from "./ProjectPreview.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Project(props) {
     //extract relevant info data props
@@ -12,7 +13,7 @@ export default function Project(props) {
         <Link href={`/projects/${slug}`}>
             <div className={styles.project}>
                 <div className={styles.imgContainer}>
-                <img className={styles.img} src={imagePath} alt={`image of ${title}`} />
+                <Image layout="intrinsic" width="1700" height="1400" className={styles.img} src={imagePath} alt={`image of ${title}`} />
                 </div>
                 <div className={styles.projectDetails}>
                     <h3 className="heading-tertiary u-margin-bottom-small u-margin-top-small">{title}</h3>
