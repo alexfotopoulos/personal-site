@@ -25,7 +25,7 @@ export default function AboutPage() {
                     </p>
                     <br />
                     <p>
-                        As a self-taught web developer, I’ve taken approximately 250 hours of expert-led online courses, including:
+                        As a self-taught web developer, I’ve taken approximately 275 hours of expert-led online courses, including:
                     </p>
                     <br />
                     <ul className="about-page__ul">
@@ -34,6 +34,7 @@ export default function AboutPage() {
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">React – The Complete Guide</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/">React, NodeJS, Express & MongoDB – The MERN Full Stack Guide</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/nextjs-react-the-complete-guide/">Next.js & React – The Complete Guide</a></li>
+                        <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/react-native-the-practical-guide/">React Native - The Practical Guide 2023</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/advanced-css-and-sass/">Advanced CSS and Sass: Flexbox, Grid, Animations and More</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/">JavaScript Algorithms and Data Structures Masterclass</a></li>
                         <li><a target="_blank" rel="noreferrer" href="https://www.udemy.com/course/git-and-github-bootcamp/">The Git & GitHub Bootcamp</a></li>
