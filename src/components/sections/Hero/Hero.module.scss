@@ -1,0 +1,74 @@
+@import "../../../../styles/sass/abstracts/variables";
+
+.Hero {
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+        url("../../../../public/images/heroImage.jpg");
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.HeroTextContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 650px) {
+        width: 100%;
+    }
+
+    & h1 {
+        margin-bottom: $spacing-large;
+        font-size: $font-xlarge;
+        letter-spacing: 0.2rem;
+        animation: moveInLeft 0.7s ease-out 0.2s;
+        animation-fill-mode: backwards;
+
+        @media (max-width: 650px) {
+            font-size: $font-large;
+        }
+    }
+
+    & h4 {
+        animation: moveInRight 0.7s ease-out 0.2s;
+        animation-fill-mode: backwards;
+    }
+
+    & h1,
+    h4 {
+        font-weight: 100;
+        text-align: center;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        opactity: 0.5;
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        opactity: 0.5;
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

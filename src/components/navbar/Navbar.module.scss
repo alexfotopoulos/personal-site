@@ -1,0 +1,77 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.Navbar {
+    &__notScrolled {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+        padding: $spacing-large;
+        color: white;
+        font-size: $font-small;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        transition: all 0.4s;
+
+        @media (max-width: 650px) {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding: $spacing-medium $spacing-small;
+        }
+    }
+
+    &__scrolled {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+        padding: $spacing-small $spacing-large;
+        color: white;
+        font-size: $font-small;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        transition: all 0.4s;
+
+        @media (max-width: 650px) {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding: $spacing-xsmall $spacing-small;
+        }
+    }
+}
+
+.NavbarBrand {
+    font-size: $font-large;
+    text-decoration: none;
+    color: white;
+}
+
+.NavbarList {
+    list-style: none;
+    display: flex;
+
+    @media (max-width: 650px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: $spacing-small;
+    }
+}
+
+.NavbarListItem {
+    margin-left: $spacing-large;
+    text-decoration: none;
+    color: white;
+
+    @media (max-width: 650px) {
+        margin: 0;
+    }
+}

@@ -1,42 +1,20 @@
 @import "sass/abstracts/variables";
-@import "sass/abstracts/mixins.scss";
 
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
+    scroll-behavior: smooth !important;
 }
 
 body {
-  font-family: sans-serif;
-  background: $color-background-dark;
-  color: $color-grey-light-2;
-  box-sizing: border-box;
-}
-
-.layout {
-  max-width: 150rem;
-  margin: 0 auto;
-}
-
-a,
-a:link,
-a:visited,
-a:hover {
-  text-decoration: none;
-  cursor: pointer;
-  color: $color-primary;
-}
-
-.homepageFeaturedProjects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4rem;
+    font-family: sans-serif;
+    font-size: $font-default;
+    box-sizing: border-box;
 }

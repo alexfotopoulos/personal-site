@@ -1,0 +1,96 @@
+@import "../../../../styles/sass/abstracts/variables";
+@import "../../../../styles/sass/abstracts/mixins";
+
+.Experience {
+    @include sectionContainer;
+    background-color: $grey-light;
+}
+
+.ExperienceSectionHeader {
+    @include sectionHeader;
+}
+
+.ExperienceText {
+    text-align: center;
+    width: 40%;
+    margin-bottom: $spacing-large;
+    font-weight: 100;
+
+    @media (max-width: 1100px) {
+        width: 60%;
+    }
+
+    @media (max-width: 500px) {
+        width: 90%;
+    }
+}
+
+.ExperienceContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    width: 90%;
+
+    @media (max-width: 1100px) {
+        width: 95%;
+    }
+
+    @media (max-width: 950px) {
+        width: 80%;
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+
+    @media (max-width: 500px) {
+        width: 90%;
+    }
+}
+
+.ExperienceContactSection {
+    background-color: white;
+    padding: $spacing-small;
+    margin: $spacing-small;
+    border-radius: $border-radius-small;
+    box-shadow: $shadow-std;
+}
+
+.ExperienceContentLogosHeader {
+    @include sectionSubHeader;
+}
+
+.logoGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+
+    @media (max-width: 500px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.ExperienceContentCoursesHeader {
+    @include sectionSubHeader;
+}
+
+.coursesList {
+    list-style: none;
+}
+
+.courseLink {
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: $spacing-xxsmall;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 950px) {
+        text-align: center;
+    }
+}

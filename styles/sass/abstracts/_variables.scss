@@ -1,30 +1,27 @@
 //colors
-$color-primary: #ecb365;
-$color-background-dark: #202124;
+$grey-light: rgb(238, 238, 238);
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+//spacing
+$spacing-xxsmall: 0.5rem;
+$spacing-xsmall: 1rem;
+$spacing-small: 1.5rem;
+$spacing-medium: 2rem;
+$spacing-large: 3rem;
+$spacing-xlarge: 4rem;
+$spacing-xxlarge: 5rem;
 
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
+//font size
+$font-small: 1.4rem;
+$font-default: 1.6rem;
+$font-medium: 2.2rem;
+$font-large: 3.5rem;
+$font-xlarge: 5rem;
 
-$color-white: #fff;
-$color-black: #000;
-$color-black-matte: rgb(20,20,20);
+//utilities
+$border-radius-xsmall: 0.7rem;
+$border-radius-small: 1rem;
+$border-radius: 1.6rem;
 
-//font
-$default-font-size: 1.6rem;
-
-//margin
-$margin-bottom-small: 1.5rem;
-$margin-bottom-medium: 3rem;
-$margin-bottom-big: 5rem;
-$margin-top-small: 1.5rem;
-$margin-top-medium: 3rem;
-$margin-top-big: 5rem;
-
-
-:export {
-    colorBackgroundDark: $color-background-dark;
-}
+//shadows
+$shadow-std: 0px 4px 6px 0px rgba(168, 168, 168, 1);
+$shadow-soft: 0px 6px 15px -8px rgb(25, 25, 25);

@@ -1,0 +1,55 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.ProjectTile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: $border-radius-small;
+
+    &:hover {
+        cursor: pointer;
+
+        .ProjectTileZoomIcon {
+            position: absolute;
+            transform: translateY(8rem);
+            display: block;
+            z-index: 9;
+        }
+
+        .ProjectImage {
+            filter: brightness(50%);
+        }
+
+        .ProjectTitle {
+            z-index: 9;
+            display: block;
+        }
+    }
+}
+
+.ProjectTileZoomIcon {
+    position: absolute;
+    transition: all 0.4s;
+    z-index: -10;
+}
+
+.ProjectImage {
+    transition: all 0.2s;
+    width: 100%;
+    height: auto;
+}
+
+.ProjectTitle {
+    background-color: rgb(201, 156, 108);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: $spacing-small 0;
+    transition: all 0.2s;
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+    display: none;
+}

@@ -1,0 +1,58 @@
+export const projects = [
+    {
+        title: `next-dashboard`,
+        image: `next-dashboard.png`,
+        description: `next-dashboard is a non-functional clone of a dashboard created by Creative Tim. While the design was created entirely by Creative Tim, all of the code used to create my clone is my own. The dashboard was built using React and NextJs. The dashboard is styled using CSS and Sass.`,
+        siteUrl: `https://afoto-nextdashboard.vercel.app/dashboard`,
+        sourceUrl: `https://github.com/alexfotopoulos/next-dashboard`,
+    },
+    {
+        title: `next-ecommerce`,
+        image: `next-ecommerce.png`,
+        description: `next-ecommerce (Kickstop) is an e-commerce website which will sell sneakers. The website will have a homepage, collection page, and product detail page where you can add an item to a cart, check out, and place an order. The app is built using React and Nextjs and uses CSS and Sass for styling and responsivness. The app will use Redux for app-wide state management. MaterialUI is used for the responsive app-drawer and icon use.`,
+        siteUrl: `https://kickstop.vercel.app`,
+        sourceUrl: `https://github.com/alexfotopoulos/next-ecommerce`,
+    },
+    {
+        title: `revival-cave`,
+        image: `revival-cave.png`,
+        description: `revivalcave.com is a website for a local business in Tampa, FL which provides health and wellness services. The website currently has three pages: a homepage, about page, and services page. The app is built using React and Nextjs and uses CSS and Sass for styling and responsivness.The home and about pages both contain an embedded Google map which show the location of the business.`,
+        siteUrl: `https://revivalcave.com/`,
+        sourceUrl: `https://github.com/alexfotopoulos/revival-cave`,
+    },
+    {
+        title: `personal-site`,
+        image: `personal-site.png`,
+        description: `This is my personal website, the very site you're viewing now! I wanted to create a website which would not only display my projects and experience, but be a project itself. I'm very excited to be able to create this and am eager to use it as a measuring stick as my development skills grow over time. This site is built using React and Nextjs, and all of the content (project files) are stored locally as mdx files. The website is styled using CSS and Sass.`,
+        siteUrl: false,
+        sourceUrl: `https://github.com/alexfotopoulos/personal-site`,
+    },
+    {
+        title: `react-wordle`,
+        image: `react-wordle.png`,
+        description: `React-Wordle is a clone of the New York Times online puzzle game Wordle. Users have six attempts to guess a randomly-selected five letter word. The app is built using React, React Context for app-wide state management, and Express for server functionality.`,
+        siteUrl: `https://foto-wordle.herokuapp.com`,
+        sourceUrl: `https://github.com/alexfotopoulos/react-wordle`,
+    },
+    {
+        title: `clone-github-homepage`,
+        image: `clone-github-homepage.png`,
+        description: `This is simply a visual clone of how my GitHub homepage built for the purpose of applying my CSS skills. The project is a single web page served by Express using Embedded JavaScript (EJS) making use of layouts and partials.`,
+        siteUrl: false,
+        sourceUrl: `https://github.com/alexfotopoulos/clone-page-github`,
+    },
+    {
+        title: `mern-stattrac`,
+        image: `mern-stattrac.png`,
+        description: `Stattrac is a full stack MERN web application that allows a user to search for players currently active in the National Football League (NFL) based upon where they went to college. Users can create an account which will allow them to save schools to their favorites and avoid having to repeatedly search for commonly viewed schools. The results page includes the following information: name, NFL team, position, experience, status, stats link, and news link. All information except for the stats and news links are provided from the API. The stats link redirects the user to the player's team page on profootballreference.com where the user can find the player's stats, and the news link redirects the user to Google news with the player already searched. The app is built using React, React Context for app-wide state management, Mongo Atlas/Mongoose for data storage, Axios for data-fetching, jsonwebtoken for auth, Express for server functionality, and the SportsData.io API to source the relevant data.`,
+        siteUrl: `https://foto-stattrac.herokuapp.com/`,
+        sourceUrl: `https://github.com/alexfotopoulos/mern-stattrac`,
+    },
+    {
+        title: `react-quizzical`,
+        image: `react-quizzical.png`,
+        description: `React-Quizzical is an online trivia game. Each game asks the user five questions, each of which has four possible answers. After the user submits their responses, their responses turn green if the user is correct, or red if the user is incorrect (and the correct answer highlights green). Subsequently, the user is allowed to start a new game. The app is built using React, React Context for app-wide state management, and calls the Open Trivia Database API to fetch the trivia answers/questions.`,
+        siteUrl: `https://foto-quizzical.herokuapp.com`,
+        sourceUrl: `https://github.com/alexfotopoulos/react-quizzical`,
+    },
+];
