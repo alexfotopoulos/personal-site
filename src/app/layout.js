@@ -1,5 +1,6 @@
 import "../../styles/globals.scss";
 import Navbar from "../components/navbar/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
     title: "Alex  Fotopoulos - Web Developer",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
             <body style={{ position: "relative" }}>
                 <Navbar />
                 {children}
+                <Analytics />
             </body>
         </html>
     );
