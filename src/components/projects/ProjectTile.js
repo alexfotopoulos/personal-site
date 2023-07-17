@@ -1,13 +1,8 @@
+import { memo } from "react";
 import styles from "./ProjectTile.module.scss";
 import Image from "next/image";
 
-export default function ProjectTile({
-    image,
-    title,
-    toggleModal,
-    modalData,
-    setModalData,
-}) {
+function ProjectTile({ image, title, toggleModal, modalData, setModalData }) {
     //function to handle modal togo and set modal data
     function modalHandler() {
         setModalData(modalData);
@@ -33,3 +28,5 @@ export default function ProjectTile({
         </div>
     );
 }
+
+export default memo(ProjectTile);

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import styles from "./Projects.module.scss";
 import ProjectTile from "../../projects/ProjectTile";
 import ProjectModal from "../../projects/ProjectModal";
@@ -14,9 +14,9 @@ export default function Projects() {
     const [showModal, setShowModal] = useState(false);
 
     //function to toggle modal
-    function toggleModal() {
+    const toggleModal = useCallback(() => {
         setShowModal((prevShowModal) => !prevShowModal);
-    }
+    }, []);
 
     return (
         <section className={styles.Projects} id="projects">
